@@ -3,7 +3,7 @@ CC = g++
 all: collatz
 
 collatz: collatz.cpp
-	$(CC) -o collatz collatz.cpp
+	$(CC) -o bin/collatz collatz.cpp
 
 clean:
-	rm -f collatz
+	rm -f bin/collatz
