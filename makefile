@@ -1,9 +1,10 @@
-CC = g++
+CC = clang++
+CFLAGS = -std=c++23 -O2
 
 all: collatz
 
-collatz: collatz.cpp
-	$(CC) -o bin/collatz collatz.cpp
+collatz: src/collatz.cpp
+	$(CC) $(CFLAGS) -o bin/collatz src/collatz.cpp
 
 clean:
-	rm -f bin/collatz
+	rm -f bin/*

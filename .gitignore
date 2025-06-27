@@ -1,4 +1,4 @@
-bin
-*.gv
+bin/*
+!bin/.gitkeep
 *.svg
 .DS_Store
